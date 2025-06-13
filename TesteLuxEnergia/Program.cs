@@ -1,9 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using OfficeOpenXml;
 using System.Reflection;
-using TesteLuxEnergia.Data;
-using TesteLuxEnergia.Repositories;
-using TesteLuxEnergia.Services;
+using APP.Data;
+using APP.Repositories;
+using APP.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,7 +19,7 @@ builder.Services.AddSwaggerGen(c =>
     c.IncludeXmlComments(xmlPath);
 });
 
-builder.Services.AddDbContext<LuxTestDbContext>(options =>
+builder.Services.AddDbContext<APPDbContext>(options =>
     options.UseInMemoryDatabase("LuxDb"));
 
 builder.Services.AddScoped<IService, Service>();

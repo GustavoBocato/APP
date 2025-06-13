@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using TesteLuxEnergia.Models;
-using TesteLuxEnergia.Services;
+using APP.Models;
+using APP.Services;
 
-namespace TesteLuxEnergia.Controllers
+namespace APP.Controllers
 {
     /// <summary>
     /// A minha solução para o desafio foi uma API em C#, que pode ser acessada pelo swagger.

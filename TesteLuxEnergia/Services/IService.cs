@@ -1,6 +1,6 @@
-﻿using TesteLuxEnergia.Models;
+﻿using APP.Models;
 
-namespace TesteLuxEnergia.Services
+namespace APP.Services
 {
     public interface IService
     {

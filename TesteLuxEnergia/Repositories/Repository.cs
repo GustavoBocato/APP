@@ -1,13 +1,13 @@
-﻿using TesteLuxEnergia.Data;
-using TesteLuxEnergia.Models;
+﻿using APP.Data;
+using APP.Models;
 
-namespace TesteLuxEnergia.Repositories
+namespace APP.Repositories
 {
     public class Repository : IRepository
     {
         private readonly string client = "Cliente";
-        private readonly LuxTestDbContext _dbContext;
-        public Repository(LuxTestDbContext luxTestDbContext) 
+        private readonly APPDbContext _dbContext;
+        public Repository(APPDbContext luxTestDbContext) 
         {
             _dbContext = luxTestDbContext;
         }

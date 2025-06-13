@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace TesteLuxEnergia.Models
+namespace APP.Models
 {
     public class Company
     {

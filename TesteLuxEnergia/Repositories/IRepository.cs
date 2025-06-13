@@ -1,6 +1,6 @@
-﻿using TesteLuxEnergia.Models;
+﻿using APP.Models;
 
-namespace TesteLuxEnergia.Repositories
+namespace APP.Repositories
 {
     public interface IRepository
     {

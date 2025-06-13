@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using OfficeOpenXml;
-using TesteLuxEnergia.Models;
-using TesteLuxEnergia.Repositories;
+using APP.Models;
+using APP.Repositories;
 
-namespace TesteLuxEnergia.Services
+namespace APP.Services
 {
     public class Service : IService
     {
@@ -166,7 +166,7 @@ namespace TesteLuxEnergia.Services
             worksheet.Cells[2, 19].Value = "Consumo Ponta (kWh)";
             worksheet.Cells[2, 20].Value = "Consumo Fora Ponta (kWh)";
             worksheet.Cells[2, 21].Value = "Valor Médio da Fatura (R$)";
-            worksheet.Cells[2, 22].Value = "Gestor Responsável (LUX)";
+            worksheet.Cells[2, 22].Value = "Gestor Responsável";
 
             var contacts = _repository.GetAllContacts().ToList();
             var companies = _repository.GetAllCompanies().ToList();
