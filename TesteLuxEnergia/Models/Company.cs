@@ -1,18 +1,25 @@
-﻿using TesteLuxEnergia.Models.Enums;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace TesteLuxEnergia.Models
 {
     public class Company
     {
+        [Key]
         public string Id { get; set; }
-        public Location Location { get; set; }
+        public string StreetName { get; set; }
+        public int Number { get; set; }
+        public string State { get; set; }
+        public string City { get; set; }
+        public int CEP { get; set; }
         public string Name { get; set; }
+        [Required]
         public string CNPJ { get; set; }
         public string Distribuitor { get; set; }
-        public TaxModality TaxModality { get; set; }
-        public double PeakConsumption { get; set; }
-        public double OutOfPeakConsumption { get; set; }
-        public double AverageBillRate { get; set; }
+        public string TaxModality { get; set; }
+        public string PeakConsumption { get; set; }
+        public string OutOfPeakConsumption { get; set; }
+        public string AverageBillRate { get; set; }
+        public string Manager { get; set; }
 
         public override bool Equals(object? obj)
         {
